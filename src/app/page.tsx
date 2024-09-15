@@ -1,7 +1,9 @@
-import Navbar from '@/components/Navbar/NavBar';
+import Navbar from '@/components/NavBar';
 import HeroSection from '@/components/HeroSection/HeroSection';
 import { OurServices } from '@/components/HeroSection/OurServices';
 import OurPictures from '@/components/HeroSection/OurPictures';
+import VideoSection from '@/components/HeroSection/VideoSection';
+import Footer from '@/components/Footer';
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -17,6 +19,8 @@ export default function Page() {
       <HeroSection />
       <OurServices />
       <OurPictures />
+      <VideoSection />
+      <Footer />
     </div>
   );
 }
