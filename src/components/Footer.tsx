@@ -24,7 +24,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-cover bg-center bg-sky-100"
-      style={{ backgroundImage: "url('/Footer/footerBachkground.png')" }}
+      style={{ backgroundImage: "url('/Footer/footerBachkground.webp')" }}
       aria-labelledby="footer-heading">
 
       <h2 id="footer-heading" className="sr-only">
@@ -52,7 +52,7 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold leading-6 text-white">
                   <div className="flex items-center">
                     <FaPhoneSquareAlt className="w-5 h-5 text-custom-yellow" />
-                    <p className="text-sm leading-6 text-gray-600 ml-2">
+                    <p className="text-sm leading-6 text-gray ml-2">
                       24222310
                     </p>
                   </div>
@@ -62,7 +62,7 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold leading-6 text-white">
                   <div className="flex items-center">
                     <FaMapMarkerAlt className="w-5 h-5 text-custom-yellow" />
-                    <p className="text-sm leading-6 text-gray-600 ml-2">
+                    <p className="text-sm leading-6 text-gray ml-2">
                       Bekalta
                     </p>
                   </div>
@@ -72,7 +72,7 @@ export default function Footer() {
                 <h3 className="text-sm font-semibold leading-6 text-white">
                   <div className="flex items-center">
                     <FaEnvelope className="w-6 h-6 text-custom-yellow" />
-                    <p className="text-sm leading-6 text-gray-600 ml-2">
+                    <p className="text-sm leading-6 text-gray ml-2">
                       powergymbekalta
                     </p>
                   </div>
@@ -104,7 +104,7 @@ export default function Footer() {
           </div>
 
           <div className="xs:pb-20 xs:pt-10 md:pb-20 md:pt-10 lg:pb-24 lg:pt-10 border-t border-gray-900/10 flex justify-center">
-            <p className="text-xs leading-5 text-white">
+            <p className="text-xs leading-5 text-gray">
               &copy; 2024 Power GYM Bekalta, All rights reserved.
             </p>
           </div>

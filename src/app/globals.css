@@ -25,6 +25,15 @@ body {
     text-wrap: balance;
   }
 }
+.bg-custom-yellow {
+  background-color: #EDF401;
+}
+.hover-bg-custom-yellow:hover {
+  background-color: #e7e775;
+}
 .text-custom-yellow {
   color: #EDF401;
+}
+.text-gray {
+  color: #B4B4B2;
 }

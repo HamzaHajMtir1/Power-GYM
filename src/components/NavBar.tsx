@@ -21,12 +21,13 @@ const Navbar: React.FC<NavbarProps> = ({ navigation }) => {
       <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">Power GYM Bekalta</span>
             <img
-              alt=""
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto"
+              alt="Power GYM Logo"
+              src="/favicon.ico"
+              className="h-12 w-auto"
             />
+            <h2>Power GYM Bekalta</h2>
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -41,7 +42,7 @@ const Navbar: React.FC<NavbarProps> = ({ navigation }) => {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+            <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-white">
               {item.name}
             </a>
           ))}
