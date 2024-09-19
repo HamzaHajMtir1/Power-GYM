@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
 
 :root {
   --background: #ffffff;
@@ -36,4 +38,24 @@ body {
 }
 .text-gray {
   color: #B4B4B2;
+}
+
+.carousel-image-container {
+  position: relative;
+}
+
+.carousel-image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  z-index: 1;
+}
+
+.carousel-image {
+  position: relative;
+  z-index: 0;
 }

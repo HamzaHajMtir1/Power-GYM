@@ -1,10 +1,9 @@
-'use client'
+'use client';
 
 export default function HeroSection() {
-
   return (
-    <div className="bg-[url('/HomePage/HeroSection-Background.webp')] bg-cover bg-center">
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+    <div className="relative isolate h-screen bg-[url('/HomePage/Pict1.webp')] bg-cover bg-center carousel-image-container">
+      <div className="relative isolate px-6 pt-14 lg:px-8 h-full flex flex-col justify-center z-10">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -38,7 +37,7 @@ export default function HeroSection() {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-custom-yellow px-3.5 py-2.5 text-sm font-semibold text-gray-600 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-custom-yellow px-3.5 py-2.5 text-sm font-semibold text-gray-600 shadow-sm hover-bg-custom-yellow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
               </a>
@@ -62,5 +61,5 @@ export default function HeroSection() {
         </div>
       </div>
     </div>
-  )
+  );
 }
