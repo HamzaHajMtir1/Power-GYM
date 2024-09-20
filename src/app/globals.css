@@ -11,8 +11,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #161516;
   }
 }
 
@@ -31,10 +31,13 @@ body {
   background-color: #EDF401;
 }
 .hover-bg-custom-yellow:hover {
-  background-color: #e7e775;
+  background-color: #EDF401;
 }
 .text-custom-yellow {
   color: #EDF401;
+}
+.bg-power {
+  background-color: #161516;
 }
 .text-gray {
   color: #B4B4B2;

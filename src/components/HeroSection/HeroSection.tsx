@@ -3,6 +3,7 @@
 export default function HeroSection() {
   return (
     <div className="relative isolate h-screen bg-[url('/HomePage/Pict1.webp')] bg-cover bg-center carousel-image-container">
+      <div className="absolute inset-0 bg-black opacity-50 z-0"></div> {/* Ajout de l'ombre */}
       <div className="relative isolate px-6 pt-14 lg:px-8 h-full flex flex-col justify-center z-10">
         <div
           aria-hidden="true"
@@ -19,30 +20,22 @@ export default function HeroSection() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Announcing our next round of funding.{' '}
-              <a href="#" className="font-semibold text-custom-yellow">
-                <span aria-hidden="true" className="absolute inset-0" />
-                Read more <span aria-hidden="true">&rarr;</span>
-              </a>
             </div>
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Data to enrich your online business
+              Power up at <span className="text-custom-yellow">Power GYM </span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat aliqua.
+              Welcome to <span className="font-bold">PowerGymBekalta</span> Your ultimate fitness destination.
+              Unleash your potential with us.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-md bg-custom-yellow px-3.5 py-2.5 text-sm font-semibold text-gray-600 shadow-sm hover-bg-custom-yellow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="rounded-md bg-custom-yellow px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover-bg-custom-yellow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
-              </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-white">
-                Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
           </div>
