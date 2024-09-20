@@ -13,7 +13,7 @@ export const OurServices: React.FC = () => {
             aria-label="Article"
             className="inline-block max-w-lg font-sans text-3xl font-extrabold leading-none tracking-tight text-gray transition-colors duration-200 hover:text-deep-purple-accent-700 sm:text-4xl"
           >
-            PISH YOUR LIMITS FORWARD
+            PUSH YOUR LIMITS FORWARD
             WE OFFER TO YOU
           </a>
         </div>
