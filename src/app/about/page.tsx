@@ -1,8 +1,5 @@
 import Navbar from '@/components/NavBar';
-import HeroSection from '@/components/HeroSection/HeroSection';
-import { OurServices } from '@/components/HeroSection/OurServices';
 import OurPictures from '@/components/HeroSection/OurPictures';
-import VideoSection from '@/components/HeroSection/VideoSection';
 import Footer from '@/components/Footer';
 
 const navigation = [
@@ -12,16 +9,14 @@ const navigation = [
   { name: 'Planning', href: '#' },
   { name: 'Contact', href: '#' },
 ];
-
-export default function Page() {
+const AboutPage: React.FC = () => {
   return (
     <div>
-      <Navbar navigation={navigation} />
-      <HeroSection />
-      <OurServices />
+    <Navbar navigation={navigation} />
       <OurPictures />
-      <VideoSection />
       <Footer />
     </div>
   );
-}
+};
+
+export default AboutPage;

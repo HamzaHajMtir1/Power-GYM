@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Power GYM",
+  title: "Power GYM Bekalta",
   description: "Site web dynamique pour la salle de sport Power Gym, développé avec Next.js. Il présente les services, cours, entraîneurs et infos clés. Conçu pour une navigation fluide et une expérience moderne, le site est responsive et utilise des technologies web récentes pour de meilleures performances.",
 };
 

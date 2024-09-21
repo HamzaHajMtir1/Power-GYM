@@ -1,118 +1,18 @@
 "use client";
 
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import {
-  FaMapMarkerAlt,
-  FaEnvelope,
-  FaPhoneSquareAlt,
-  FaFacebook,
-  FaInstagram,
-} from "react-icons/fa";
+import React from 'react';
 
-
-
-
-export default function Footer() {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
+const Footer: React.FC = () => {
   return (
-    <footer className="bg-cover bg-center bg-sky-100"
-      style={{ backgroundImage: "url('/Footer/footerBachkground.webp')" }}
-      aria-labelledby="footer-heading">
-
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
-      {isClient && (
-        <div className="mx-auto max-w-7xl px-6 pt-8 sm:pt-24 lg:px-8 lg:pt-32">
-          <div className="grid lg:grid-cols-2 lg:gap-8 xs:grid-cols-1">
-            <div className="space-y-8 pt-0">
-              <div className="flex items-center space-x-4 text-white">
-                <Image
-                  height={160}
-                  width={160}
-                  className="h-30"
-                  src="/Footer/logo.webp"
-                  alt="Power GYM Logo."
-                />
-              </div>
-
-
-            </div>
-
-            <div className="grid pt-10 lg:grid-cols-3 lg:gap-2 xs:grid-cols-1 xs:gap-1">
-              <div className="lg:pt-0 xs:pt-10">
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  <div className="flex items-center">
-                    <FaPhoneSquareAlt className="w-5 h-5 text-custom-yellow" />
-                    <p className="text-sm leading-6 text-gray ml-2">
-                      24222310
-                    </p>
-                  </div>
-                </h3>
-              </div>
-              <div className="lg:pt-0 xs:pt-12">
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  <div className="flex items-center">
-                    <FaMapMarkerAlt className="w-5 h-5 text-custom-yellow" />
-                    <p className="text-sm leading-6 text-gray ml-2">
-                      Bekalta
-                    </p>
-                  </div>
-                </h3>
-              </div>
-              <div className="lg:pt-0 xs:pt-10">
-                <h3 className="text-sm font-semibold leading-6 text-white">
-                  <div className="flex items-center">
-                    <FaEnvelope className="w-6 h-6 text-custom-yellow" />
-                    <p className="text-sm leading-6 text-gray ml-2">
-                      powergymbekalta
-                    </p>
-                  </div>
-                </h3>
-              </div>
-              
-            </div>
-          </div>
-
-          <div className="xs:pb-6 xs:pt-6 flex justify-center">
-            <Link
-              href="https://www.facebook.com/promolab.tunisie"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900"
-              aria-label="Facebook"
-            >
-              <FaFacebook className="w-6 h-6 mx-2 text-custom-yellow" />
-            </Link>
-            <Link
-              href="https://www.instagram.com/promolabtunisie"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-gray-900"
-              aria-label="Instagram"
-            >
-              <FaInstagram className="w-6 h-6 mx-2 text-custom-yellow" />
-            </Link>
-          </div>
-
-          <div className="xs:pb-20 xs:pt-10 md:pb-20 md:pt-10 lg:pb-24 lg:pt-10 border-t border-gray-900/10 flex justify-center">
-            <p className="text-xs leading-5 text-gray">
-              &copy; 2024 Power GYM Bekalta, All rights reserved.
-            </p>
-          </div>
-        </div>
-      )}
+    <footer className="bg-custom-yellow text-gray-900 py-4">
+      <div className="container mx-auto text-center">
+        &copy; 2024 Power GYM Bekalta, All rights reserved.
+      </div>
     </footer>
   );
-}
+};
+
+export default Footer;
 
 /* The Old Version */
 
