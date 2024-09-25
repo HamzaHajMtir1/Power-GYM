@@ -4,6 +4,7 @@
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -38,6 +39,9 @@ body {
 }
 .bg-power {
   background-color: #161516;
+}
+.bg-about-section {
+  background-color: #414133;
 }
 .text-gray {
   color: #B4B4B2;

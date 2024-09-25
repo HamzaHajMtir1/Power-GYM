@@ -1,5 +1,6 @@
 import Navbar from '@/components/NavBar';
-import OurPictures from '@/components/HeroSection/OurPictures';
+import AboutUsHeroSection from '@/components/AboutUs/AboutUsHeroSection';
+import {TeamSection} from '@/components/AboutUs/TeamSection';
 import Footer from '@/components/Footer';
 
 const navigation = [
@@ -13,7 +14,8 @@ const AboutPage: React.FC = () => {
   return (
     <div>
     <Navbar navigation={navigation} />
-      <OurPictures />
+      <AboutUsHeroSection />
+      <TeamSection />
       <Footer />
     </div>
   );
