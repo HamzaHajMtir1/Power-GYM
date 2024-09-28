@@ -66,3 +66,18 @@ body {
   position: relative;
   z-index: 0;
 }
+@keyframes fireworks {
+  0% {
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000, 0 0 30px #ff0000, 0 0 35px #ff0000, 0 0 40px #ff0000;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000, 0 0 30px #ff0000, 0 0 35px #ff0000, 0 0 40px #ff0000;
+  }
+}
+
+.fireworks {
+  animation: fireworks 1.5s infinite;
+}

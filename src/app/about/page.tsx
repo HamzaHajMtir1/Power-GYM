@@ -1,7 +1,10 @@
 import Navbar from '@/components/NavBar';
 import AboutUsHeroSection from '@/components/AboutUs/AboutUsHeroSection';
-import {TeamSection} from '@/components/AboutUs/TeamSection';
 import Footer from '@/components/Footer';
+import { OurWelcome } from '@/components/AboutUs/OurWelcome';
+import { WhatSetsUsApart } from '@/components/AboutUs/WhatSetsUsApart';
+import { MeetOurTeam } from '@/components/AboutUs/MeetOurTeam';
+import { CallToAction } from '@/components/AboutUs/CallToAction';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -15,7 +18,10 @@ const AboutPage: React.FC = () => {
     <div>
     <Navbar navigation={navigation} />
       <AboutUsHeroSection />
-      <TeamSection />
+      <OurWelcome />
+      <WhatSetsUsApart />
+      <MeetOurTeam />
+      <CallToAction />
       <Footer />
     </div>
   );

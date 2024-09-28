@@ -7,19 +7,6 @@ import Image from "next/image"
 export function AboutUsComponent() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200">
-      <header className="bg-white shadow-md">
-        <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-gray-800">FitFusion Gym</h1>
-          <nav>
-            <ul className="flex space-x-4">
-              <li><a href="#" className="text-gray-600 hover:text-gray-800">Home</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-800">Classes</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-800">Membership</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-800">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
 
       <main className="container mx-auto px-4 py-12">
         <section className="mb-16">
@@ -101,18 +88,9 @@ export function AboutUsComponent() {
 
         <section className="text-center">
           <h2 className="text-4xl font-bold mb-4">Ready to Start Your Fitness Journey?</h2>
-          <p className="text-lg text-gray-700 mb-8">Join FitFusion Gym today and experience the difference!</p>
-          <Button size="lg">
-            Join Now
-          </Button>
+          <h3 className="text-lg text-gray-700 mb-8">Join FitFusion Gym today and experience the difference!</h3>
         </section>
       </main>
-
-      <footer className="bg-gray-800 text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2023 FitFusion Gym. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   )
 }
