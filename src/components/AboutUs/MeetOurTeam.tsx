@@ -5,12 +5,12 @@ import { motion } from 'framer-motion'
 
 const teamMembers = [
   {
-    name: "Brahim Aziz",
+    name: "Aziz Brahim",
     role: "Board trainer & Personal Trainer",
     image: "/About/aziz.png",
   },
   {
-    name: "Belkahla Md Aziz",
+    name: "Md Aziz Belkahla",
     role: "Kickboxing trainer",
     image: "/About/med_aziz.png",
   },
