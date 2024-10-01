@@ -9,7 +9,7 @@ import { CallToAction } from '@/components/AboutUs/CallToAction';
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About Us', href: '/about' },
-  { name: 'Tarifs', href: '#' },
+  { name: 'Tarifs', href: '/tarifs' },
   { name: 'Planning', href: '#' },
   { name: 'Contact', href: '#' },
 ];

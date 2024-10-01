@@ -37,6 +37,9 @@ body {
 .text-custom-yellow {
   color: #EDF401;
 }
+.hover-text-custom-yellow:hover {
+  color: #EDF401;
+}
 .bg-power {
   background-color: #161516;
 }
