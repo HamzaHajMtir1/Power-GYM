@@ -154,12 +154,12 @@ const Navbar: React.FC<NavbarProps> = ({ navigation }) => {
                     </a>
                   );
                 })}
-                {/* Register Button */}
+                {/* Sign Up Button */}
                 <a
-                  href="/register"
+                  href="/signup"
                   className="mt-4 -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 bg-custom-yellow text-gray-900 text-center"
                 >
-                  Register
+                  Sign Up
                 </a>
               </div>
               {/* Social Media Icons */}
