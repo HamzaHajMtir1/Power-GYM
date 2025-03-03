@@ -1,13 +1,12 @@
 'use client';
 import React, { useState } from 'react';
-import { User, Mail, Lock, Phone, Calendar } from 'lucide-react';
+import { User, Mail, Lock, Phone } from 'lucide-react';
 
 interface FormData {
   fullName: string;
   email: string;
   password: string;
   phone: string;
-  birthdate: string;
 }
 
 export default function SignUpForm() {
@@ -15,21 +14,29 @@ export default function SignUpForm() {
     fullName: '',
     email: '',
     password: '',
-    phone: '',
-    birthdate: '',
+    phone: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+
+    const response = await fetch('/api/auth/signup', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(formData),
+    });
+
+    if (!response.ok) {
+      const { error } = await response.json();
+      alert(error);
+      return;
+    }
+
+    alert('User created successfully!');
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
@@ -106,20 +113,6 @@ export default function SignUpForm() {
               required
               className="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
               placeholder="Phone Number"
-            />
-          </div>
-
-          <div className="relative">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <Calendar className="h-5 w-5 text-custom-yellow" />
-            </div>
-            <input
-              type="date"
-              name="birthdate"
-              value={formData.birthdate}
-              onChange={handleChange}
-              required
-              className="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
             />
           </div>
 

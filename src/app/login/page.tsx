@@ -1,7 +1,6 @@
 'use client';
 import React, { FormEvent, useState } from 'react';
 import { Mail, Lock } from 'lucide-react';
-import { login } from './actions'
 
 interface FormData {
   email: string;
@@ -75,7 +74,7 @@ export default function LoginForm() {
           </div>
         
           <button
-            formAction={login}
+            
             type="submit"
             className="w-full bg-custom-yellow text-gray-900 py-3 rounded-2xl font-semibold hover-bg-custom-yellow transition duration-300 transform hover:scale-[1.02]"
           >

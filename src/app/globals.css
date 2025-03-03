@@ -46,6 +46,9 @@ body {
 .bg-about-section {
   background-color: #414133;
 }
+.bg-about-section-hover:hover {
+  background-color: #414133;
+}
 .text-gray {
   color: #B4B4B2;
 }

@@ -98,10 +98,10 @@ const Navbar: React.FC<NavbarProps> = ({ navigation }) => {
           </a>
           {/* Register Button */}
           <a
-            href="/register"
+            href="/signup"
             className="ml-4 text-md font-bold leading-4 px-4 py-2 rounded-full bg-custom-yellow text-gray-900 hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out transform hover:scale-105"
           >
-            Register
+            Sign Up
           </a>
         </div>
       </nav>
