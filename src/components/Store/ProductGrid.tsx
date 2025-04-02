@@ -35,7 +35,7 @@ export default function ProductGrid({ products, onAddToCart }: ProductGridProps)
             </span>
             <button
               onClick={onAddToCart}
-              className=" w-full mt-4 bg-black text-white py-2 hover:bg-gray-800 transition-colors"
+              className="rounded-full w-full mt-4 bg-black text-white py-2 hover:bg-gray-800 transition-colors"
             >
               Add to Cart
             </button>

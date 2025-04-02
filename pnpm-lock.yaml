@@ -2693,6 +2693,7 @@ snapshots:
       '@shadcn/ui': 0.0.4
       '@supabase/ssr': 0.5.2(@supabase/supabase-js@2.47.8)
       '@supabase/supabase-js': 2.47.8
+      bcryptjs: 3.0.2
       class-variance-authority: 0.7.0
       clsx: 2.1.1
       embla-carousel-react: 8.3.0(react@18.3.1)
