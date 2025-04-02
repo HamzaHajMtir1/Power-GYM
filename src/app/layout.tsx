@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from '@/components/NavBar';
+import AuthProvider from "@/providers/AuthProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -19,13 +20,14 @@ const navigation = [
   { name: 'About Us', href: '/about' },
   { name: 'Tarifs', href: '/tarifs' },
   { name: 'Planning', href: '/planning' },
-  { name: 'Contact', href: '#' },
+  { name: 'Store', href: '/store' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 export const metadata: Metadata = {
   title: "Power GYM Bekalta",
   description:
-    "Site web dynamique pour la salle de sport Power Gym, développé avec Next.js. Il présente les services, cours, entraîneurs et infos clés. Conçu pour une navigation fluide et une expérience moderne, le site est responsive et utilise des technologies web récentes pour de meilleures performances.",
+    "Site web pour la salle de sport Power Gym. Il présente les services, cours, entraîneurs et infos clés. Conçu pour une navigation fluide et une expérience moderne, le site est responsive et utilise des technologies web récentes pour de meilleures performances.",
 };
 
 export default function RootLayout({
@@ -35,11 +37,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={``}
-      >
-        <Navbar navigation={navigation} />
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <AuthProvider>
+          <Navbar navigation={navigation} />
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );

@@ -68,7 +68,7 @@ export function TariffPageComponent() {
           </h2>
           <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:grid-cols-3">
           {fitness.map((plan) => (
-            <Card key={plan.name} className="flex flex-col justify-between bg-slate-700">
+            <Card key={plan.name} className="flex flex-col justify-between">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-gray-300">{plan.name}</CardTitle>
               </CardHeader>
@@ -93,7 +93,7 @@ export function TariffPageComponent() {
           </h2>
           <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:grid-cols-3">
             {kingBoxing.map((plan) => (
-              <Card key={plan.name} className="flex flex-col justify-between bg-slate-700">
+              <Card key={plan.name} className="flex flex-col justify-between">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold text-gray-300">{plan.name}</CardTitle>
                 </CardHeader>
@@ -117,7 +117,7 @@ export function TariffPageComponent() {
           </h2>
           <div className="mt-12 space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 lg:max-w-4xl lg:mx-auto xl:max-w-none xl:grid-cols-3">
             {karate.map((plan) => (
-              <Card key={plan.name} className="flex flex-col justify-between bg-slate-700">
+              <Card key={plan.name} className="flex flex-col justify-between ">
                 <CardHeader>
                   <CardTitle className="text-2xl font-bold text-gray-300">{plan.name}</CardTitle>
                 </CardHeader>

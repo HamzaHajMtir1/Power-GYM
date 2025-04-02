@@ -54,7 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ navigation }) => {
                 className={`text-md font-bold leading-4 px-3 py-2 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 ${
                   isActive
                     ? 'bg-custom-yellow text-gray-900'
-                    : 'text-white hover:text-gray-700 hover:bg-custom-yellow'
+                    : 'text-white hover-text-custom-yellow hover:bg-custom-yellow'
                 }`}
               >
                 {item.name}
