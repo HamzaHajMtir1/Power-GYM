@@ -1,12 +1,14 @@
 "use client";
 
 import React from 'react';
+import { FaFacebook, FaInstagram, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
+
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-gray-900 text-white py-12 mt-16">
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
@@ -22,20 +24,50 @@ const Footer: React.FC = () => {
             Transform your body, elevate your mind.
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-400 hover:text-white transition">FB</a>
-            <a href="#" className="text-gray-400 hover:text-white transition">IG</a>
-            <a href="#" className="text-gray-400 hover:text-white transition">WA</a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100093231261606"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-200 hover-text-custom-yellow transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              <FaFacebook size={24} />
+            </a>
+            <a
+              href="https://www.instagram.com/powergymbekalta1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-200 hover-text-custom-yellow transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              <FaInstagram size={24} />
+            </a>
+            <a
+              href="https://www.whatsapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-200 hover-text-custom-yellow transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              <FaWhatsapp size={24} />
+            </a>
+            <a
+              href="https://www.google.com/maps/place/PowerGymbekalta/@35.6232343,10.9895983,17z"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-200 hover-text-custom-yellow transition duration-300 ease-in-out transform hover:scale-105"
+            >
+              <FaMapMarkerAlt size={24} />
+            </a>
           </div>
         </div>
         
         <div>
           <h4 className="font-bold text-lg mb-4">Quick Links</h4>
           <ul className="space-y-2">
-            <li><a href="#" className="text-gray-400 hover:text-white transition">Home</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white transition">About Us</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white transition">Tarifs</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white transition">Planning</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white transition">Contact</a></li>
+            <li><a href="/" className="text-gray-400 hover:text-white transition">Home</a></li>
+            <li><a href="/about" className="text-gray-400 hover:text-white transition">About Us</a></li>
+            <li><a href="/tarifs" className="text-gray-400 hover:text-white transition">Tarifs</a></li>
+            <li><a href="/planning" className="text-gray-400 hover:text-white transition">Planning</a></li>
+            <li><a href="/store" className="text-gray-400 hover:text-white transition">Store</a></li>
+            <li><a href="/contact" className="text-gray-400 hover:text-white transition">Contact</a></li>
           </ul>
         </div>
         
@@ -45,7 +77,8 @@ const Footer: React.FC = () => {
             <li><a href="#" className="text-gray-400 hover:text-white transition">Workout Plans</a></li>
             <li><a href="#" className="text-gray-400 hover:text-white transition">Group Classes</a></li>
             <li><a href="#" className="text-gray-400 hover:text-white transition">Personal Training</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white transition">Nutrition Coaching</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-white transition">Nutrition Consultations</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-white transition">Nutrition Products</a></li>
             <li><a href="#" className="text-gray-400 hover:text-white transition">Fitness Assessment</a></li>
           </ul>
         </div>
@@ -56,8 +89,8 @@ const Footer: React.FC = () => {
             <li>123 Fitness Street, Bekalta</li>
             <li>+216 123 456 789</li>
             <li>info@powergym.com</li>
-            <li>Mon-Fri: 5:00 AM - 11:00 PM</li>
-            <li>Sat-Sun: 6:00 AM - 10:00 PM</li>
+            <li>Mon-Sat: 8:00 - 22:00</li>
+            <li>Sun: 16:00 - 21:00</li>
           </ul>
         </div>
       </div>

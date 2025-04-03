@@ -8,11 +8,8 @@ export function CTASection() {
                     Join Power GYM today and start your journey towards a healthier, stronger you.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">
-                    <button className="bg-black text-white px-8 py-3 rounded-lg font-medium">
+                    <button className="bg-black text-white px-8 py-3 font-medium rounded-full">
                     Start Your Journey
-                    </button>
-                    <button className="bg-white text-black px-8 py-3 rounded-lg font-medium">
-                    Contact Us
                     </button>
                 </div>
                 </div>

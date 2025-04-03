@@ -97,12 +97,12 @@ const Navbar: React.FC<NavbarProps> = ({ navigation }) => {
             <FaMapMarkerAlt size={24} />
           </a>
           {/* Register Button */}
-          <a
+      {/* <a
             href="/signup"
             className="ml-4 text-md font-bold leading-4 px-4 py-2 rounded-full bg-custom-yellow text-gray-900 hover:bg-gray-700 hover:text-white transition duration-300 ease-in-out transform hover:scale-105"
           >
             Sign Up
-          </a>
+          </a>*/}
         </div>
       </nav>
       {/* Mobile Menu */}
@@ -155,12 +155,12 @@ const Navbar: React.FC<NavbarProps> = ({ navigation }) => {
                   );
                 })}
                 {/* Sign Up Button */}
-                <a
+                {/*<a
                   href="/signup"
                   className="mt-4 -mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 bg-custom-yellow text-gray-900 text-center"
                 >
                   Sign Up
-                </a>
+                </a>*/}
               </div>
               {/* Social Media Icons */}
               <div className="py-6 flex gap-x-4">
