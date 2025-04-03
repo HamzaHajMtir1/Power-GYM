@@ -68,7 +68,7 @@ const Navbar: React.FC<NavbarProps> = ({ navigation }) => {
             href="https://www.facebook.com/profile.php?id=100093231261606"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-200 hover:text-gray-900 transition duration-300 ease-in-out transform hover:scale-105"
+            className="text-gray-200 hover-text-custom-yellow transition duration-300 ease-in-out transform hover:scale-105"
           >
             <FaFacebook size={24} />
           </a>
@@ -76,7 +76,7 @@ const Navbar: React.FC<NavbarProps> = ({ navigation }) => {
             href="https://www.instagram.com/powergymbekalta1"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-200 hover:text-gray-900 transition duration-300 ease-in-out transform hover:scale-105"
+            className="text-gray-200 hover-text-custom-yellow transition duration-300 ease-in-out transform hover:scale-105"
           >
             <FaInstagram size={24} />
           </a>
@@ -84,7 +84,7 @@ const Navbar: React.FC<NavbarProps> = ({ navigation }) => {
             href="https://www.whatsapp.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-200 hover:text-gray-900 transition duration-300 ease-in-out transform hover:scale-105"
+            className="text-gray-200 hover-text-custom-yellow transition duration-300 ease-in-out transform hover:scale-105"
           >
             <FaWhatsapp size={24} />
           </a>
@@ -92,7 +92,7 @@ const Navbar: React.FC<NavbarProps> = ({ navigation }) => {
             href="https://www.google.com/maps/place/PowerGymbekalta/@35.6232343,10.9895983,17z"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-200 hover:text-gray-900 transition duration-300 ease-in-out transform hover:scale-105"
+            className="text-gray-200 hover-text-custom-yellow transition duration-300 ease-in-out transform hover:scale-105"
           >
             <FaMapMarkerAlt size={24} />
           </a>
